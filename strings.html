@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!--6.1 User Input
+1. Allow name inputs 
+2. Make variable containing 1st name + space + last name and zip code
+3. Check for how many characters , >20 Present error
+    1. less than 20 = good
+4. Check to see Zip is ok 
+5. Good name and zip, give secret message 
+add creative like font image etc 
+comment on every line of code
+
+    Trey Blalock 
+    06Jun 
+    TBLALOCK83346@uat.edu
+
+-->
+<head>
+    <title>Input Valdation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body> 
+    <header> 
+        <h1> Welcome to Input Validation</h1>
+    </header>
+<nav> 
+    <h2>Navigation</h2><br> 
+    <h3><a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Game Page </a><br> 
+        <a href="./strings.html">Input validation</a>  
+    </h3>
+</nav>
+
+Is zip code <div id ="zipCodeDis"></div> valid? <div id = "zipTest"></div>
+<script>
+    var zipCode = "92127";
+    var isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zipCode);
+    document.getElementByID("zipTest").innerHTML = isValidZip;
+    document.getElementByID("zipCodeDis").innerHTML = zipCode;
+
+</script>
+
+
+</body>
+
+</html>
